@@ -15,10 +15,6 @@ window.onload = function() {
 	while(xTotal<800){
 		var r = Math.floor((Math.random() * 100) + 1);
 		xTotal = r + xTotal;
-		if(xTotal>800){
-			r = xTotal - 800;
-			xTotal = xTotal - r;
-		}
 		xSize.push(r);
 	}
 	var ySize=new Array();
@@ -26,10 +22,6 @@ window.onload = function() {
 	while(yTotal<800){
 		var r = Math.floor((Math.random() * 100) + 1);
 		yTotal = r + yTotal;
-		if(yTotal>800){
-			r = yTotal - 800;
-			yTotal = yTotal - r;
-		}
 		ySize.push(r);
 	}
 	var xPos = 0;
